@@ -4,6 +4,8 @@
 const getInput = require('../lib/getInput')
 let input = getInput(__dirname)
 
-console.log(input.split('\n'))
+const cleanInput = input.split('\n')
+
+console.log(cleanInput)
 
 // console.timeEnd() 
