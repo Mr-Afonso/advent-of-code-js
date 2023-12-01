@@ -1,32 +1,272 @@
 # 2023
 
-[AoC 2023](https://adventofcode.com/)
+[AoC 2023](https://adventofcode.com/2023)
 
 - [x] Day 1
-- [] Day 2
-- [] Day 3
-- [] Day 4
-- [] Day 5
-- [] Day 6
-- [] Day 7
-- [] Day 8
-- [] Day 9
-- [] Day 10
-- [] Day 11
-- [] Day 12
-- [] Day 13
-- [] Day 14
-- [] Day 15
-- [] Day 16
-- [] Day 17
-- [] Day 18
-- [] Day 19
-- [] Day 20
-- [] Day 21
-- [] Day 22
-- [] Day 23
-- [] Day 24
-- [] Day 25
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2022
+
+[AoC 2022](https://adventofcode.com/2022)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2021
+
+[AoC 2021](https://adventofcode.com/2021)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2020
+
+[AoC 2020](https://adventofcode.com/2020)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2019
+
+[AoC 2019](https://adventofcode.com/2019)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2018
+
+[AoC 2018](https://adventofcode.com/2018)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2017
+
+[AoC 2017](https://adventofcode.com/2017)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2016
+
+[AoC 2016](https://adventofcode.com/2016)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
+
+# 2015
+
+[AoC 2015](https://adventofcode.com/2015)
+
+- [ ] Day 1
+- [ ] Day 2
+- [ ] Day 3
+- [ ] Day 4
+- [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
+- [ ] Day 8
+- [ ] Day 9
+- [ ] Day 10
+- [ ] Day 11
+- [ ] Day 12
+- [ ] Day 13
+- [ ] Day 14
+- [ ] Day 15
+- [ ] Day 16
+- [ ] Day 17
+- [ ] Day 18
+- [ ] Day 19
+- [ ] Day 20
+- [ ] Day 21
+- [ ] Day 22
+- [ ] Day 23
+- [ ] Day 24
+- [ ] Day 25
 
 # Reminders
 
