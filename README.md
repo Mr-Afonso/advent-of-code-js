@@ -244,7 +244,7 @@
 
 [AoC 2015](https://adventofcode.com/2015)
 
-- [ ] Day 1
+- [x] Day 1
 - [ ] Day 2
 - [ ] Day 3
 - [ ] Day 4
