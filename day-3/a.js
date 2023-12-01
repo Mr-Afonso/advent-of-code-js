@@ -1,4 +1,7 @@
 const getInput = require('../lib/getInput')
-let input = getInput(__dirname)
+// const getInput = require('../lib/getTestInput')
 
-console.log(input.split('\n')) 
+let input = getInput(__dirname)
+const cleanInput = input.split("\n")
+
+console.log(cleanInput) 
