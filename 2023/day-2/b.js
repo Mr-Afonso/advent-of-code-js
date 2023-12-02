@@ -12,7 +12,7 @@ let sum = 0
 // Ex: Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
 
 // games
-cleanInput.map((element, index) => {
+cleanInput.map((element) => {
 
     let red = 0
     let green = 0
