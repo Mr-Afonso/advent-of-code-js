@@ -1,7 +1,12 @@
 # Advent of code in JavaScript
 
-450 puzzles / x solved
-250 days / x solved
+| Puzzles | Solved |
+| ------- | ------ |
+| 450     | 18     |
+
+| Days    | Solved | 
+| ------- | ------ |
+| 250     | 9      |
 
 # 2023
 
@@ -68,7 +73,7 @@
 [AoC 2021](https://adventofcode.com/2021)
 
 - [ ] Day 1
-- [ ] Day 2
+- [x] Day 2
 - [ ] Day 3
 - [ ] Day 4
 - [ ] Day 5
