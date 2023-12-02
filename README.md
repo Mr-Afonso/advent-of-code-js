@@ -1,12 +1,12 @@
 # Advent of code in JavaScript
 
-| Puzzles | Solved |
-| ------- | ------ |
-| 450     | 18     |
+| Puzzles | Solved | %   |
+| ------- | ------ | --- |
+| 450     | 18     | 4%  |
 
-| Days    | Solved | 
-| ------- | ------ |
-| 250     | 9      |
+| Days    | Solved | %   |
+| ------- | ------ | --- |
+| 250     | 9      | 4%  |
 
 # 2023
 
