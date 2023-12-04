@@ -12,7 +12,7 @@ let now = [0, 0]
 let housesRoboSanta = []
 let nowRoboSanta = [0, 0]
 
-cleanInput.map((element) => {
+cleanInput.map((element, index) => {
 
   if (element === "v") {
     now = [now[0] + 1, now[1]]
