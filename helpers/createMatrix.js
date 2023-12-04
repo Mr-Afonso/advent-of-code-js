@@ -12,7 +12,7 @@ const createMatrix = (input) => {
 
     for (let z = 0; z < element.length; z++) {
       const elementz = element[z];
-      matrix[index][z] = Number(elementz)
+      matrix[index][z] = elementz
     }
   }
 
