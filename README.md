@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 20     | 4%  |
+| 450     | 22     | 5%  |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 10     | 4%  |
+| 250  | 11     | 4%  |
 
 # 2023
 
@@ -15,7 +15,7 @@
 - [x] Day 1
 - [x] Day 2
 - [x] Day 3 - over complicated solution (8/10)
-- [ ] Day 4
+- [x] Day 4
 - [ ] Day 5
 - [ ] Day 6
 - [ ] Day 7
