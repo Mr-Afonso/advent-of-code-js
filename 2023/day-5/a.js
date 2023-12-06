@@ -2,9 +2,8 @@ const getInput = require('../../lib/getInput')
 // const getInput = require('../../lib/getTestInput')
 
 let input = getInput(__dirname)
-const cleanInput = input.split("\n")
-
-// console.log(cleanInput)
+// const cleanInput = input.split("\n")
+const cleanInput = input.split("\r\n")
 
 // Almanac
 // seed needs to be between source range start and source range start + range length
@@ -38,10 +37,10 @@ seeds.map((seed) => {
 
 
   cleanInput.map((element, index) => {
-    console.log('www', element)
+
     // seed-to-soil map:
     if (index > cleanInput.indexOf('seed-to-soil map:') && index < cleanInput.indexOf('soil-to-fertilizer map:') && element !== "") {
-      console.log(element)
+      // console.log(element)
       const destination = Number(element.split(' ')[0])
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
@@ -131,6 +130,8 @@ seeds.map((seed) => {
 })
 
 
-console.log('location:', locations.sort()[0])
-
+// console.log('location:', locations.sort()[0])
+console.log('location:', locations.sort())
 // 1080703105 ++
+// 223765572 --
+// 230164311 --
