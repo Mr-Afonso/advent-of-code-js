@@ -15,7 +15,7 @@
 - [x] Day 1
 - [x] Day 2
 - [x] Day 3 - over complicated solution (8/10)
-- [x] Day 4
+- [x] Day 4 - simple, but you need some interpretation skills for the part 2 (3/10)(7/10)
 - [ ] Day 5
 - [ ] Day 6
 - [ ] Day 7

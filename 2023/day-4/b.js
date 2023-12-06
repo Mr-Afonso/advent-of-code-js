@@ -1,14 +1,14 @@
-// const getInput = require('../../lib/getInput')
-const getInput = require('../../lib/getTestInput')
+const getInput = require('../../lib/getInput')
+// const getInput = require('../../lib/getTestInput')
 
 let input = getInput(__dirname)
 // test input 
-const cleanInput = input.split("\n")
-// const cleanInput = input.split("\r\n")
+// const cleanInput = input.split("\n")
+const cleanInput = input.split("\r\n")
 
 // console.log(cleanInput)
 
-let arr = Array(cleanInput.length).fill(0)
+let arr = Array(cleanInput.length).fill(1)
 
 cleanInput.map((element, index) => {
 
@@ -20,23 +20,10 @@ cleanInput.map((element, index) => {
     return element !== ""
   })
 
-  // let points = 0
-  console.log(compare.length)
+
   compare.map((el, key) => {
-    if (index === 0) {
-      arr[index + key + 1] = 1 + arr[index + key + 1]
-    } else {
-      arr[index + key + 1] = arr[index + key + 1] * compare.length
-    }
+    arr[index + key + 1] = arr[index + key + 1] + arr[index]
   })
 
-  console.log(arr)
-
-
-
 })
-
-
-// 30 scratchcards
-
-// 1+2+4+8+14+1
+console.log("Result:", arr.reduce((a, b) => a + b))
