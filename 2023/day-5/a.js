@@ -33,22 +33,28 @@ cleanInput.map((element) => {
 
 seeds.map((seed) => {
   transiction = Number(seed)
-  // console.log('seed', transiction)
 
+  let soil = 0
+  let fertilizer = 0
+  let water = 0
+  let light = 0
+  let temperature = 0
+  let humidity = 0
+  let location = 0
 
   cleanInput.map((element, index) => {
 
+
     // seed-to-soil map:
     if (index > cleanInput.indexOf('seed-to-soil map:') && index < cleanInput.indexOf('soil-to-fertilizer map:') && element !== "") {
-      // console.log(element)
       const destination = Number(element.split(' ')[0])
       const source = Number(element.split(' ')[1])
-      const length = Number(element.split(' ')[2])
+      const length = Number(element.split(' ')[2]) 
 
-      if (transiction >= source && transiction <= source + length - 1) {
+      if (transiction >= source && transiction <= source + length - 1 && soil < 1) {
         transiction = (transiction - source) + destination
+        soil++
       }
-      // console.log('1', transiction)
     }
 
     // soil-to-fertilizer map:
@@ -57,10 +63,10 @@ seeds.map((seed) => {
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
 
-      if (transiction >= source && transiction <= source + length - 1) {
+      if (transiction >= source && transiction <= source + length - 1 && fertilizer < 1) {
         transiction = (transiction - source) + destination
+        fertilizer++
       }
-      // console.log('2', transiction)
     }
 
     // fertilizer-to-water map:
@@ -68,14 +74,11 @@ seeds.map((seed) => {
       const destination = Number(element.split(' ')[0])
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
-      // console.log('transiction', transiction)
-      if (transiction >= source && transiction <= source + length - 1) {
-        // console.log('Before', transiction)
+
+      if (transiction >= source && transiction <= source + length - 1 && water < 1) {
         transiction = (transiction - source) + destination
-        // console.log(transiction)
+        water++
       }
-      // console.log('water', transiction)
-      // console.log('element', element)
     }
 
     // water-to-light map:
@@ -84,8 +87,9 @@ seeds.map((seed) => {
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
 
-      if (transiction >= source && transiction <= source + length - 1) {
+      if (transiction >= source && transiction <= source + length - 1 && light < 1) {
         transiction = (transiction - source) + destination
+        light++
       }
     }
 
@@ -95,8 +99,9 @@ seeds.map((seed) => {
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
 
-      if (transiction >= source && transiction <= source + length - 1) {
+      if (transiction >= source && transiction <= source + length - 1 && temperature < 1) {
         transiction = (transiction - source) + destination
+        temperature++
       }
     }
 
@@ -106,8 +111,9 @@ seeds.map((seed) => {
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
 
-      if (transiction >= source && transiction <= source + length - 1) {
+      if (transiction >= source && transiction <= source + length - 1 && humidity < 1) {
         transiction = (transiction - source) + destination
+        humidity++
       }
     }
 
@@ -117,21 +123,17 @@ seeds.map((seed) => {
       const source = Number(element.split(' ')[1])
       const length = Number(element.split(' ')[2])
 
-      if (transiction >= source && transiction <= source + length - 1) {
+      if (transiction >= source && transiction <= source + length - 1 && location < 1) {
         transiction = (transiction - source) + destination
+        location++
       }
     }
 
   })
 
-
-  // console.log(transiction)
   locations.push(transiction)
 })
 
-
-// console.log('location:', locations.sort()[0])
-console.log('location:', locations.sort())
-// 1080703105 ++
-// 223765572 --
-// 230164311 --
+console.log('location:', locations.sort((a, b) => {
+  return a - b;
+})[0])
