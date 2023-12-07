@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 22     | 5%  |
+| 450     | 26     | 6%  |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 11     | 4%  |
+| 250  | 13     | 5%  |
 
 # 2023
 
@@ -18,7 +18,7 @@
 - [x] Day 4 - simple, but you need some interpretation skills for the part 2 (3/10)(7/10)
 - [ ] Day 5
 - [x] Day 6 - simple (3/10)
-- [ ] Day 7
+- [x] Day 7 - simple but verbose (4/10). Part 2 more complex (6/10)
 - [ ] Day 8
 - [ ] Day 9
 - [ ] Day 10
