@@ -5,42 +5,37 @@ let input = getInput(__dirname)
 // const cleanInput = input.split("\n")
 const cleanInput = input.split("\r\n")
 
-
 let instructions = cleanInput[0]
 let nodes = cleanInput.slice(2)
 
 let navigate = ""
 let count = 0
 
-// instruction (ex: L)
-// point (ex: ["QNB","QQJ","SFJ"])
 const findNextElement = (instruction, point) => {
 
-  let nextNode = []
+  let nextNode = ""
 
   count++
 
-  point.forEach((el) => {
-    nodes.forEach((node) => {
+  nodes.forEach((node) => {
 
-      let element = node.slice(0, 3)
-      let leftElement = node.slice(7, 10)
-      let rightElement = node.slice(12, 15)
+    let element = node.slice(0, 3)
+    let leftElement = node.slice(7, 10)
+    let rightElement = node.slice(12, 15)
 
-      if (el === element) {
-        if (instruction === "L") {
-          nextNode.push(leftElement)
-        }
-
-        if (instruction === "R") {
-          nextNode.push(rightElement)
-        }
+    if (point === element) {
+      if (instruction === "L") {
+        nextNode = leftElement
       }
-    })
-  })
 
+      if (instruction === "R") {
+        nextNode = rightElement
+      }
+    }
+  })
   return nextNode
 }
+
 
 const findStarts = () => {
 
@@ -58,29 +53,52 @@ const findStarts = () => {
 
 }
 
-let stop = true
-let moveIndex = 0
+let multiple = []
 
-while (stop) {
+const findZ = (arr) => {
 
-  if (moveIndex === 0 && count === 0) {
-    navigate = findNextElement(instructions.split("")[moveIndex], findStarts())
-  } else {
-    navigate = findNextElement(instructions.split("")[moveIndex], navigate)
-  }
+  arr.forEach((el) => {
+    let stop = true
+    let moveIndex = 0
 
-  if (navigate.every((e) => {
-    return e[2] === 'Z'
-  })) {
-    stop = false
-  }
+    while (stop) {
 
-  if (instructions.split("").length === moveIndex + 1) {
-    moveIndex = 0
-  } else {
-    moveIndex++
-  }
+      if (moveIndex === 0 && count === 0) {
+        navigate = findNextElement(instructions.split("")[moveIndex], el)
+      } else {
+        navigate = findNextElement(instructions.split("")[moveIndex], navigate)
+      }
+
+      if (navigate.includes("Z")) {
+        multiple.push(count)
+        stop = false
+        count = 0
+      }
+
+      if (instructions.split("").length === moveIndex + 1) {
+        moveIndex = 0
+      } else {
+        moveIndex++
+      }
+
+    }
+  })
 
 }
 
-console.log("Count:", count)
+findZ(findStarts())
+
+// https://en.wikipedia.org/wiki/Least_common_multiple
+// https://stackoverflow.com/questions/47047682/least-common-multiple-of-an-array-values-using-euclidean-algorithm
+
+// greatest common divisor
+const gcd = function (a, b) {
+  return a ? gcd(b % a, a) : b;
+}
+
+// least common multiple
+const lcm = function (a, b) {
+  return a * b / gcd(a, b);
+}
+
+console.log("Count:", multiple.reduce(lcm))
