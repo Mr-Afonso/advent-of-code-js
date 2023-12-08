@@ -44,12 +44,11 @@ seeds.map((seed) => {
 
   cleanInput.map((element, index) => {
 
-
     // seed-to-soil map:
     if (index > cleanInput.indexOf('seed-to-soil map:') && index < cleanInput.indexOf('soil-to-fertilizer map:') && element !== "") {
       const destination = Number(element.split(' ')[0])
       const source = Number(element.split(' ')[1])
-      const length = Number(element.split(' ')[2]) 
+      const length = Number(element.split(' ')[2])
 
       if (transiction >= source && transiction <= source + length - 1 && soil < 1) {
         transiction = (transiction - source) + destination
