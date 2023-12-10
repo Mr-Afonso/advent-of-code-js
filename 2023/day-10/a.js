@@ -1,5 +1,5 @@
-const getInput = require('../../lib/getInput')
-// const getInput = require('../../lib/getTestInput')
+// const getInput = require('../../lib/getInput')
+const getInput = require('../../lib/getTestInput')
 
 let input = getInput(__dirname)
 const cleanInput = input.split("\r\n")
@@ -17,7 +17,7 @@ const matrix = []
 
 let sCoord = []
 
-// create an array
+// create a matrix
 // find "S" coord
 for (let index = 0; index < cleanInput.length; index++) {
     const element = cleanInput[index]
