@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 28     | 6%  |
+| 450     | 34     | 8%  |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 14     | 6%  |
+| 250  | 17     | 7%  |
 
 # 2023
 
@@ -20,8 +20,8 @@
 - [x] Day 6 - simple (3/10)
 - [x] Day 7 - simple but verbose (4/10). Part 2 more complex (6/10)
 - [x] Day 8 - simple (3/10). Part 2 you need to use LCM ([least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple)) (4/10), do not use brute force please :)
-- [x] Day 9
-- [ ] Day 10
+- [x] Day 9 - simple (4/10)
+- [x] Day 10 - Matrix day. Not the hardest (4/10).
 - [ ] Day 11
 - [ ] Day 12
 - [ ] Day 13
