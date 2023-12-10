@@ -20,7 +20,7 @@
 - [x] Day 6 - simple (3/10)
 - [x] Day 7 - simple but verbose (4/10). Part 2 more complex (6/10)
 - [x] Day 8 - simple (3/10). Part 2 you need to use LCM ([least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple)) (4/10), do not use brute force please :)
-- [ ] Day 9
+- [x] Day 9
 - [ ] Day 10
 - [ ] Day 11
 - [ ] Day 12
