@@ -16,7 +16,7 @@
 - [x] Day 2
 - [x] Day 3 - over complicated solution (8/10)
 - [x] Day 4 - simple, but you need some interpretation skills for the part 2 (3/10)(7/10)
-- [ ] Day 5
+- [x] Day 5 - interpretation, interpretation, interpretation and how to manipulate the puzzle input (5/10). Part 2 memory usage (9/10)
 - [x] Day 6 - simple (3/10)
 - [x] Day 7 - simple but verbose (4/10). Part 2 more complex (6/10)
 - [x] Day 8 - simple (3/10). Part 2 you need to use LCM ([least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple)) (4/10), do not use brute force please :)
@@ -277,41 +277,6 @@
 - [ ] Day 23
 - [ ] Day 24
 - [ ] Day 25
-
-# Reminders
-
-## Arrays
-
-### Sort objects inside an array
-
-```javascript
-const compare = (a, b) => {
-  if (a.index < b.index) {
-    return -1;
-  }
-  if (a.index > b.index) {
-    return 1;
-  }
-  return 0;
-};
-
-const values = [
-  {
-    value: "text",
-    index: 10,
-  },
-  {
-    value: "hello",
-    index: 1,
-  },
-  {
-    value: "hi",
-    index: 99,
-  },
-];
-
-values.sort(compare);
-```
 
 # Nice Articles
 
