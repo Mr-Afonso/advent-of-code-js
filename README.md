@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 34     | 8%  |
+| 450     | 36     | 8%  |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 17     | 7%  |
+| 250  | 18     | 7%  |
 
 # 2023
 
@@ -16,13 +16,13 @@
 - [x] Day 2
 - [x] Day 3 - over complicated solution (8/10)
 - [x] Day 4 - simple, but you need some interpretation skills for the part 2 (3/10)(7/10)
-- [x] Day 5 - interpretation, interpretation, interpretation and how to manipulate the puzzle input (5/10). Part 2 memory usage (9/10)
+- [x] Day 5 - interpretation, interpretation, interpretation and how to manipulate the puzzle input (5/10). Part 2 memory usage (9/10). Infer and narrow down the lot of seeds
 - [x] Day 6 - simple (3/10)
 - [x] Day 7 - simple but verbose (4/10). Part 2 more complex (6/10)
 - [x] Day 8 - simple (3/10). Part 2 you need to use LCM ([least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple)) (4/10), do not use brute force please :)
 - [x] Day 9 - simple (4/10)
 - [x] Day 10 - Matrix day. Not the hardest (4/10). Hard part 2 (8/10)
-- [ ] Day 11
+- [x] Day 11 - One more matrix day. Calculate distance between 2 points in a 2D matrix (Manhattan distance) (5/10). Part 2 if expands 1 can expand 2, 3, 4..., work with the coordenates deltas (8/10)
 - [ ] Day 12
 - [ ] Day 13
 - [ ] Day 14

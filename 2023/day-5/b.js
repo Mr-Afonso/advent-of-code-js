@@ -140,51 +140,34 @@ seeds.forEach((el, index) => {
   }
 })
 
-// console.log('location:', locations.sort((a, b) => {
-//   return a.location - b.location
-// }))
-
-// 290921248 ++
-// 806051557 ++
-// 281946248 1000 xxx
-// 281945648 100 xxx
-// 281945628 10 xxx
-// 281945619 xxx
-// 5368 xxx
-// 6388 xxx
-// 59370572 correct
-
-// console.log([locations.sort((a, b) => {
-//   return a.location - b.location
-// })[0], locations.sort((a, b) => {
-//   return a.location - b.location
-// })[1]].sort((a, b) => {
-//   return a.seed - b.seed
-// }))
-
 transiction = 0
 
-// const lowHigh = [locations.sort((a, b) => {
-//   return a.location - b.location
-// })[0], locations.sort((a, b) => {
-//   return a.location - b.location
-// })[1]].sort((a, b) => {
-//   return a.seed - b.seed
-// })
+let cache = 99999999999999999999
 
-let cache = 9999999999999999999999999999999999
+let bestSeed = 0
 
-for (let index = 1623314212 - 10000; index <= 1623314212 + 10000; index++) {
+// check each seed lot for the best seed group (+/- 10000)
+seeds.forEach((el, index) => {
+
+  if (index % 2 == 0) {
+
+    for (let z = Number(seeds[index]); z <= Number(seeds[index]) + Number(seeds[index + 1]) - 1; z += 10000) {
+      let tran = calculateLocation(z, "||", false)
+
+      if (tran < cache) {
+        bestSeed = z
+        cache = tran
+      }
+    }
+  }
+})
+
+for (let index = bestSeed - 10000; index <= bestSeed + 10000; index++) {
   let tran = calculateLocation(index, "||", false)
 
   if (tran < cache) {
-    console.log('seed', index)
-    console.log(tran)
     cache = tran
   }
 }
 
-
-console.log('location:', locations.sort((a, b) => {
-  return a.location - b.location
-}))
+console.log("Total:", cache)
