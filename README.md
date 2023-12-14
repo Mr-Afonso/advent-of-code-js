@@ -25,7 +25,7 @@
 - [x] Day 11 - One more matrix day. Calculate distance between 2 points in a 2D matrix (Manhattan distance) (5/10). Part 2 if expands 1 can expand 2, 3, 4..., work with the coordenates deltas (8/10)
 - [ ] Day 12
 - [ ] Day 13
-- [ ] Day 14
+- [x] Day 14 - simple matrix day (4/10). Part 2 hunt for a pattern - Floyd's Tortoise and Hare Algorithm (Cycle Detection - loop detection) (8/10)
 - [ ] Day 15
 - [ ] Day 16
 - [ ] Day 17
