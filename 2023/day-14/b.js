@@ -187,6 +187,7 @@ while (cycles <= 1000) {
 let cycleSize = 0
 let startCycle = 0
 
+// this assumes that the end of a loop is = to the start
 const hasLoop = (arr) => {
 
   let tortoise = arr[0]
@@ -201,7 +202,7 @@ const hasLoop = (arr) => {
     tortoise = arr[index]
     hare = arr[index + 1]
 
-    if (tortoise === undefined || typeof hare === undefined) {
+    if (tortoise === undefined || hare === undefined) {
       return false // No loop found
     }
 

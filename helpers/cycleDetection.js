@@ -1,28 +1,26 @@
-const hasLoop = (arr) => {
-  let tortoise = arr[0]
-  let hare = arr[0]
+// Floyd's Cycle detection algorithm
 
-  let index = 0
+// this does not work if any value of the array is bigger than the array.length
+function hasCycle(arr) {
+  let slow = 0;
+  let fast = 0;
 
   while (true) {
-    tortoise = arr[index]
-    hare = arr[index + 1]
+    slow = arr[slow];
+    fast = arr[fast + 1];
 
-    if (tortoise === hare) {
-      return true // Loop detected
+    if (slow === fast) {
+      return true; // Cycle detected
     }
 
-    if (typeof tortoise === 'undefined' || typeof hare === 'undefined') {
-      return false // No loop found
+    if (slow === undefined || fast === undefined) {
+      return false; // No cycle found
     }
   }
+
 }
 
-const arrayWithLoop = [1, 2, 3, 4, 2, 5]
-const arrayWithoutLoop = [1, 2, 3, 4, 5]
-
-console.log(hasLoop(arrayWithLoop)) // Output: true
-console.log(hasLoop(arrayWithoutLoop)) // Output: false
+console.log(hasCycle([1, 18, 7, 3, 4, 5, 6, 2, 2, 3])); // Output: true
 
 
 // In this algorithm:
