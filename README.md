@@ -24,7 +24,7 @@
 - [x] Day 10 - Matrix day. Not the hardest (4/10). Hard part 2 (8/10)
 - [x] Day 11 - One more matrix day. Calculate distance between 2 points in a 2D matrix (Manhattan distance) (5/10). Part 2 if expands 1 can expand 2, 3, 4..., work with the coordenates deltas (8/10)
 - [ ] Day 12
-- [ ] Day 13
+- [x] Day 13
 - [ ] Day 14
 - [ ] Day 15
 - [ ] Day 16
