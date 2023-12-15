@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 36     | 8%  |
+| 450     | 40     | 9%  |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 18     | 7%  |
+| 250  | 20     | 8%  |
 
 # 2023
 
@@ -26,7 +26,7 @@
 - [ ] Day 12
 - [ ] Day 13
 - [x] Day 14 - simple matrix day (4/10). Part 2 hunt for a pattern - Floyd's Tortoise and Hare Algorithm (Cycle Detection - loop detection) (8/10)
-- [x] Day 15 - ASCII code day. charCodeAt() and modulo operation will be your friends (2/10).
+- [x] Day 15 - ASCII code day. charCodeAt() and modulo operation will be your friends (2/10). Part 2 it is all about interpretation (5/10). Almost a rest day.
 - [ ] Day 16
 - [ ] Day 17
 - [ ] Day 18
