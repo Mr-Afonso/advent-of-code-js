@@ -27,15 +27,8 @@ let count = 0
 const moveLightBeam = (x, y, direction) => {
 
     // lets stop this madness
-    if (x < 0 || x > matrix.length - 1 || y < 0 || y > matrix[0].length-1 || count > matrixLength) {
-        // console.log("x",x)
-        // console.log("y",y)
-        // console.log("count",count)
-        // console.log('matrix.length', matrix.length)
-        // console.log('matrix[0].length ', matrix[0].length )
-        // console.log('matrixLength', matrixLength)
-        // console.log('========')
-        return false
+    if (x < 0 || x > matrix.length - 1 || y < 0 || y > matrix[0].length - 1 || count > matrixLength) {
+        return;
     }
 
     energizedMatrix[x][y] = count
@@ -44,47 +37,49 @@ const moveLightBeam = (x, y, direction) => {
     if (direction === "right") {
 
         if (matrix[x][y] === ".") {
-            return moveLightBeam(x, y + 1, "right")
+            moveLightBeam(x, y + 1, "right");
         }
 
         if (matrix[x][y] === "-") {
-            return moveLightBeam(x, y + 1, "right")
+            moveLightBeam(x, y + 1, "right");
         }
 
         if (matrix[x][y] === "|") {
-            return moveLightBeam(x - 1, y, "up"), moveLightBeam(x + 1, y, "down")
+            moveLightBeam(x + 1, y, "down")
+            moveLightBeam(x - 1, y, "up")
         }
 
         if (matrix[x][y] === "/") {
-            return moveLightBeam(x - 1, y, "up")
+            moveLightBeam(x - 1, y, "up");
         }
 
         if (matrix[x][y] !== "-" && matrix[x][y] !== "|" && matrix[x][y] !== "/" && matrix[x][y] !== ".") {
-            return moveLightBeam(x + 1, y, "down")
+            moveLightBeam(x + 1, y, "down");
         }
 
     }
 
     if (direction === "left") {
-
         if (matrix[x][y] === ".") {
-            return moveLightBeam(x, y - 1, "left")
+            // console.log(x,y)
+            moveLightBeam(x, y - 1, "left");
         }
 
         if (matrix[x][y] === "-") {
-            return moveLightBeam(x, y - 1, "left")
+            moveLightBeam(x, y - 1, "left");
         }
 
         if (matrix[x][y] === "|") {
-            return moveLightBeam(x + 1, y, "down"), moveLightBeam(x - 1, y, "up")
-        }
-
-        if (matrix[x][y] === "/") {
+            moveLightBeam(x - 1, y, "up")
             moveLightBeam(x + 1, y, "down")
         }
 
+        if (matrix[x][y] === "/") {
+            moveLightBeam(x + 1, y, "down");
+        }
+
         if (matrix[x][y] !== "-" && matrix[x][y] !== "|" && matrix[x][y] !== "/" && matrix[x][y] !== ".") {
-            return moveLightBeam(x - 1, y, "up")
+            moveLightBeam(x - 1, y, "up");
         }
 
     }
@@ -92,24 +87,24 @@ const moveLightBeam = (x, y, direction) => {
     if (direction === "up") {
 
         if (matrix[x][y] === ".") {
-            return moveLightBeam(x - 1, y, "up")
+            moveLightBeam(x - 1, y, "up");
         }
 
         if (matrix[x][y] === "-") {
-            return moveLightBeam(x, y + 1, "right"), moveLightBeam(x, y - 1, "left")
-
+            moveLightBeam(x, y - 1, "left")
+            moveLightBeam(x, y + 1, "right")
         }
 
         if (matrix[x][y] === "|") {
-            return moveLightBeam(x - 1, y, "up")
+            moveLightBeam(x - 1, y, "up");
         }
 
         if (matrix[x][y] === "/") {
-            return moveLightBeam(x, y + 1, "right")
+            moveLightBeam(x, y + 1, "right");
         }
 
         if (matrix[x][y] !== "-" && matrix[x][y] !== "|" && matrix[x][y] !== "/" && matrix[x][y] !== ".") {
-            return moveLightBeam(x, y - 1, "left")
+            moveLightBeam(x, y - 1, "left");
         }
 
     }
@@ -117,23 +112,24 @@ const moveLightBeam = (x, y, direction) => {
     if (direction === "down") {
 
         if (matrix[x][y] === ".") {
-            return moveLightBeam(x + 1, y, "down")
+            moveLightBeam(x + 1, y, "down");
         }
 
         if (matrix[x][y] === "-") {
-            return moveLightBeam(x, y + 1, "right") || moveLightBeam(x, y - 1, "left")
+            moveLightBeam(x, y + 1, "right")
+            moveLightBeam(x, y - 1, "left")
         }
 
         if (matrix[x][y] === "|") {
-            return moveLightBeam(x + 1, y, "down")
+            moveLightBeam(x + 1, y, "down");
         }
 
         if (matrix[x][y] === "/") {
-            return moveLightBeam(x, y - 1, "left")
+            moveLightBeam(x, y - 1, "left");
         }
 
         if (matrix[x][y] !== "-" && matrix[x][y] !== "|" && matrix[x][y] !== "/" && matrix[x][y] !== ".") {
-            return moveLightBeam(x, y + 1, "right")
+            moveLightBeam(x, y + 1, "right");
         }
 
     }
@@ -141,6 +137,23 @@ const moveLightBeam = (x, y, direction) => {
 }
 
 
+
 moveLightBeam(0, 0, "right")
 
 console.table(energizedMatrix)
+
+let total = 0
+
+for (let index = 0; index < energizedMatrix.length; index++) {
+    const element = energizedMatrix[index]
+
+    for (let z = 0; z < element.length; z++) {
+        const elementz = element[z]
+
+        if (elementz !== ".") {
+            total++
+        }
+    }
+}
+
+console.log("Total:", total)
