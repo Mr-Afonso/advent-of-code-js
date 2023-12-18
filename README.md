@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 40     | 9%  |
+| 450     | 42     | 9%  |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 20     | 8%  |
+| 250  | 21     | 8%  |
 
 # 2023
 
@@ -29,7 +29,7 @@
 - [x] Day 15 - ASCII code day. charCodeAt() and modulo operation will be your friends (2/10). Part 2 it is all about interpretation (5/10). Almost a rest day.
 - [ ] Day 16
 - [ ] Day 17
-- [x] Day 18
+- [x] Day 18 - Calculate Polygon Area (Shoelace Formula) and play with the perimeter. This one was hard (9/10). Part 2 is very simple if you use the shoelace formula in part 1 (3/10)
 - [ ] Day 19
 - [ ] Day 20
 - [ ] Day 21
