@@ -2,11 +2,11 @@
 
 | Puzzles | Solved | %   |
 | ------- | ------ | --- |
-| 450     | 42     | 9%  |
+| 450     | 44     | 10% |
 
 | Days | Solved | %   |
 | ---- | ------ | --- |
-| 250  | 21     | 8%  |
+| 250  | 22     | 9%  |
 
 # 2023
 
@@ -30,7 +30,7 @@
 - [ ] Day 16
 - [ ] Day 17
 - [x] Day 18 - Calculate Polygon Area (Shoelace Formula) and play with the perimeter. This one was hard (9/10). Part 2 is very simple if you use the shoelace formula in part 1 (3/10)
-- [ ] Day 19
+- [x] Day 19 input manipulation
 - [ ] Day 20
 - [ ] Day 21
 - [ ] Day 22
